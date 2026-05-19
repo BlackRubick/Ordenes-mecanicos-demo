@@ -1,7 +1,7 @@
 {
-  "short_name": "SIEEG",
-  "name": "Ordenes de Servicio SIEEG",
-  "description": "Sistema de órdenes de servicio SIEEG para registro, seguimiento y consulta de equipos.",
+  "short_name": "Mecanica",
+  "name": "Ordenes de Servicio Mecanica",
+  "description": "Sistema de órdenes de servicio Mecanica para registro, seguimiento y consulta de equipos.",
   "icons": [
     {
       "src": "favicon.ico",

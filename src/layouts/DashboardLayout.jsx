@@ -98,10 +98,11 @@ const DashboardLayout = ({ children }) => {
     .toLowerCase();
 
   return (
-    <div data-role={normalizedRole} className="min-h-screen bg-background flex flex-col fade-in">
+    <div data-role={normalizedRole} className="min-h-screen flex flex-col fade-in relative overflow-hidden">
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(27,42,59,0.16),transparent_32%),radial-gradient(circle_at_top_right,rgba(232,80,10,0.08),transparent_28%),linear-gradient(180deg,#f7f8fa_0%,#f4f6f8_100%)]" />
       <Navbar />
-      <main className="flex-1 flex flex-col gap-6 pt-24 px-4 pb-4">
-        <section id="dashboard-scroll-container" ref={scrollContainerRef} className="flex-1 rounded-2xl bg-card shadow-card p-6 overflow-auto">
+      <main className="relative z-10 flex-1 flex flex-col gap-6 pt-24 px-4 pb-4">
+        <section id="dashboard-scroll-container" ref={scrollContainerRef} className="mt-4 flex-1 rounded-[28px] border border-white/60 bg-white/82 shadow-[0_18px_60px_rgba(27,42,59,0.08)] backdrop-blur-xl pt-10 p-6 overflow-auto">
           {children}
         </section>
       </main>

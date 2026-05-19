@@ -231,7 +231,7 @@ function ForeignServicesCreate() {
       doc.setFont('helvetica','normal');
       doc.setFontSize(9);
       setTxt('#000000');
-      doc.text('SIEEG', textX, textY + 16);
+      doc.text('Mecanica', textX, textY + 16);
       // Recuadro a la derecha en azul oscuro con fondo
       const boxW = 120, boxH = 28;
       const boxX = W - boxW - 50, boxY = logoY + 6;
@@ -602,7 +602,7 @@ function ForeignServicesCreate() {
         <div className="flex gap-2 mt-4">
           {!showTable && (
             <button
-              className="px-4 py-2 rounded-xl bg-primary-500 text-white font-bold shadow-lg hover:bg-primary-600 transition-all ml-auto"
+              className="px-4 py-2 rounded-xl bg-action-500 text-white font-bold shadow-lg hover:bg-action-600 transition-all ml-auto"
               onClick={handleGuardarCliente}
             >
               Guardar datos del cliente
@@ -610,7 +610,7 @@ function ForeignServicesCreate() {
           )}
           {showTable && (
             <button
-              className="px-4 py-2 rounded-xl bg-primary-500 text-white font-bold shadow-lg hover:bg-primary-600 transition-all ml-auto"
+              className="px-4 py-2 rounded-xl bg-action-500 text-white font-bold shadow-lg hover:bg-action-600 transition-all ml-auto"
               onClick={handleGuardarTabla}
             >
               {isEditMode ? 'Guardar cambios y generar PDF' : 'Generar PDF'}

@@ -219,7 +219,7 @@ function OrdenClienteDetalle() {
       <DashboardLayout>
         <div className="flex flex-col items-center justify-center min-h-full py-16">
           <p className="text-xl text-red-500 font-bold mb-4">No se encontró la orden.</p>
-          <button className="px-4 py-2 rounded-xl bg-primary-500 text-white font-bold shadow-lg hover:bg-primary-600 transition-all" onClick={handleBackToClientOrders}>
+          <button className="px-4 py-2 rounded-xl bg-action-500 text-white font-bold shadow-lg hover:bg-action-600 transition-all" onClick={handleBackToClientOrders}>
             Volver
           </button>
         </div>

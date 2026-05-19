@@ -383,8 +383,8 @@ const bodyY = gy + 8;
   doc.setFont('helvetica', 'normal');
   doc.setFontSize(9);
   color(NAVY);
-  if ((quote.razonSocial || '').toUpperCase().includes('SIEEG')) {
-    doc.text('cuenta bbva : 0123875156   clabe 012100001238751568   Nombre SIEEG INGENIERIA Y TELECOMUNICACIONES SA DE CV', MX, bankY);
+  if ((quote.razonSocial || '').toUpperCase().includes('MECANICA')) {
+    doc.text('cuenta bbva : 0123875156   clabe 012100001238751568   Nombre MECANICA INGENIERIA Y TELECOMUNICACIONES SA DE CV', MX, bankY);
   } else {
     doc.text('Banorte Cta : 0295855215     Clabe : 072 100 002958552154   Nombre:  Sinar Adrián Casanova García', MX, bankY);
     bankY += 16;

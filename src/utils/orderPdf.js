@@ -1,13 +1,13 @@
 import jsPDF from 'jspdf';
 
 const TERMS = [
-  '1) SIEEG no se responsabiliza en caso el equipo presente daños por mal uso de terceros o a nivel software y/o hardware antes de su ingreso a reparación.',
+  '1) Mecanica no se responsabiliza en caso el equipo presente daños por mal uso de terceros o a nivel software y/o hardware antes de su ingreso a reparación.',
   '2) El cliente acepta pagar todas las piezas y mano de obra al finalizar la reparación.',
   '3) La fecha estimada de finalización está sujeta a cambios según la disponibilidad de piezas.',
   '4) El taller de reparación no es responsable de ninguna pérdida de datos en equipos electrónicos.',
-  '5) Si la reparación requiere trabajos y/o piezas que no se hayan especificado anteriormente, SIEEG indicará un presupuesto actualizado, en caso de no autorizarlo no se realizará ninguna reparación.',
-  '6) SIEEG te notificará una vez que tu producto esté reparado y listo para su entrega, este mismo se almacenará sin coste durante los primeros 10 días hábiles. Después de 10 días, si no se ha retirado el dispositivo, se cobrará los gastos de almacenamiento. El gasto de almacenamiento equivale a $50.00 por día.',
-  '7) Una vez el producto se considere abandonado, SIEEG tomará la propiedad del mismo en compensación de los costos de almacenamiento.',
+  '5) Si la reparación requiere trabajos y/o piezas que no se hayan especificado anteriormente, Mecanica indicará un presupuesto actualizado, en caso de no autorizarlo no se realizará ninguna reparación.',
+  '6) Mecanica te notificará una vez que tu producto esté reparado y listo para su entrega, este mismo se almacenará sin coste durante los primeros 10 días hábiles. Después de 10 días, si no se ha retirado el dispositivo, se cobrará los gastos de almacenamiento. El gasto de almacenamiento equivale a $50.00 por día.',
+  '7) Una vez el producto se considere abandonado, Mecanica tomará la propiedad del mismo en compensación de los costos de almacenamiento.',
   '8) La garantía sobre reparaciones es válida solo en la mano de obra a partir de la fecha de finalización.',
 ];
 
@@ -200,7 +200,7 @@ export const generateOrderPdfDoc = async (order = {}, options = {}) => {
     doc.setFont('helvetica', 'normal');
     doc.setFontSize(9);
     setTxt('#000000');
-    doc.text('SIEEG', textX, textY + 16);
+    doc.text('Mecanica', textX, textY + 16);
 
     const boxW = 120;
     const boxH = 28;

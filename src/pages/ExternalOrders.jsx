@@ -20,7 +20,7 @@ export default function ExternalOrders() {
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-2xl font-bold">Órdenes de Servicio Externas</h2>
         <button
-          className="bg-primary text-white px-4 py-2 rounded-xl font-semibold shadow-md hover:bg-primary-dark transition"
+          className="bg-action-500 text-white px-4 py-2 rounded-xl font-semibold shadow-md hover:bg-action-600 transition"
           onClick={() => navigate('/servicios-externos')}
         >
           Crear orden externa

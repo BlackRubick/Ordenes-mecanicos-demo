@@ -7,19 +7,41 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          500: '#1976F3', // Azul principal (logo)
-          600: '#1565C0', // Hover
-          700: '#0D47A1', // Activo
-          DEFAULT: '#1976F3',
+          50: '#EEF3F7',
+          100: '#DCE5EC',
+          200: '#B7C7D5',
+          300: '#90A8BE',
+          400: '#6784A5',
+          500: '#1B2A3B', // Azul acero
+          600: '#243648',
+          700: '#2E4460', // Azul marino
+          800: '#223147',
+          900: '#172231',
+          DEFAULT: '#1B2A3B',
         },
         secondary: {
-          500: '#42A5F5', // Azul secundario
-          DEFAULT: '#42A5F5',
+          500: '#E8500A',
+          DEFAULT: '#E8500A',
         },
-        background: '#F4F7FC', // Fondo general
+        action: {
+          50: '#FFF1E9',
+          100: '#FFDCC8',
+          200: '#FFBF98',
+          300: '#FFA067',
+          400: '#F97B34',
+          500: '#E8500A', // Naranja mecánico
+          600: '#CC4708',
+          700: '#B03E07',
+          DEFAULT: '#E8500A',
+        },
+        alert: {
+          500: '#F4A63A', // Ámbar alerta
+          DEFAULT: '#F4A63A',
+        },
+        background: '#F4F6F8', // Fondo general
         card: '#FFFFFF', // Fondo de cards
-        sidebar: '#0B1F3A', // Sidebar azul marino profundo
-        navbar: '#FFFFFF', // Navbar claro
+        sidebar: '#2E4460',
+        navbar: '#1B2A3B',
         text: {
           main: '#0F172A',
           secondary: '#64748B',
@@ -28,17 +50,17 @@ module.exports = {
         muted: '#E2E8F0',
         // Estados del sistema
         state: {
-          pending: '#94A3B8',
-          review: '#1E88E5',
-          repair: '#FB8C00',
-          completed: '#2E7D32',
-          cancelled: '#D32F2F',
+          pending: '#E2E8EF',
+          review: '#FFF3CD',
+          repair: '#F4A63A',
+          completed: '#D4EDDA',
+          cancelled: '#F8D7DA',
         },
         // Legacy/compatibilidad
-        success: '#2E7D32',
-        warning: '#FB8C00',
-        error: '#D32F2F',
-        info: '#1E88E5',
+        success: '#D4EDDA',
+        warning: '#F4A63A',
+        error: '#F8D7DA',
+        info: '#FFF3CD',
         dark: '#0F172A',
       },
       borderRadius: {
@@ -46,8 +68,8 @@ module.exports = {
         '3xl': '2rem',
       },
       boxShadow: {
-        'soft': '0 4px 32px 0 rgba(60, 72, 100, 0.10)',
-        'card': '0 2px 16px 0 rgba(60, 72, 100, 0.08)',
+        'soft': '0 4px 32px 0 rgba(27, 42, 59, 0.12)',
+        'card': '0 2px 16px 0 rgba(27, 42, 59, 0.10)',
       },
       fontFamily: {
         sans: ['Inter', 'ui-sans-serif', 'system-ui'],

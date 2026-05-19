@@ -277,9 +277,9 @@ export default function Quotes() {
   const EMISORES = [
     {
       key: 'sieeg',
-      label: 'SIEEG',
+      label: 'Mecanica',
       direccion: 'Blvd. Belisario Dominguez #4213 L5',
-      razonSocial: 'SIEEG INGENIERIA Y TELECOMUNICACIONES',
+      razonSocial: 'Mecanica INGENIERIA Y TELECOMUNICACIONES',
       rfc: 'SIT2409128S3',
       repse: '',
     },
@@ -295,7 +295,7 @@ export default function Quotes() {
 
   // Generar número de cotización automático
   const generarNumeroCotizacion = (emisorKey) => {
-    const prefix = emisorKey === 'sieeg' ? 'SIEEG' : emisorKey === 'sinar' ? 'SINAR' : 'COT';
+    const prefix = emisorKey === 'sieeg' ? 'MECANICA' : emisorKey === 'sinar' ? 'SINAR' : 'COT';
     const num = String(cotCounter).padStart(4, '0');
     return `${prefix}-${new Date().getFullYear()}-${num}`;
   };

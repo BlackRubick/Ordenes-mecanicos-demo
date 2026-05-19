@@ -285,7 +285,7 @@ export default function OrderDetail() {
         </style>
       </head>
       <body>
-        <div class="center title">SIEEG - Ticket de Servicio</div>
+        <div class="center title">Mecanica - Ticket de Servicio</div>
         <div class="small">Folio: ${order.folio || '-'}</div>
         <div class="small">Fecha: ${order.fecha || '-'}</div>
         <div class="small">Cliente: ${order.clientName || '-'}</div>
